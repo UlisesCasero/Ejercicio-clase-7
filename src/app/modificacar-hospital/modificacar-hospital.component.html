@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Modificar Hospital</h2>
+<mat-dialog-content>
+  <form [formGroup]="hospitalForm" (ngSubmit)="onSubmit()">
+    <div style="margin-bottom: 16px;">
+      <mat-form-field appearance="fill" style="width: 100%;">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="nombre">
+      </mat-form-field>
+    </div>
+    <div style="margin-bottom: 16px;">
+      <mat-form-field appearance="fill" style="width: 100%;">
+        <mat-label>Dirección</mat-label>
+        <input matInput formControlName="direccion">
+      </mat-form-field>
+    </div>
+    <mat-dialog-actions>
+      <button mat-button type="submit">Modificar Hospital</button>
+      <button mat-button mat-dialog-close>Cancelar</button>
+    </mat-dialog-actions>
+  </form>
+</mat-dialog-content>
